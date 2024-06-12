@@ -1,0 +1,15 @@
+<!-- gestion_app/templates/gestion_app/membre_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membre List</title>
+</head>
+<body>
+    <h1>Membre List</h1>
+    <ul>
+        {% for membre in membres %}
+            <li>{{ membre.prenom }} {{ membre.nom }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des DVD</title>
+</head>
+<body>
+    <h1>Liste des DVD</h1>
+    <ul>
+        {% for dvd in dvds %}
+            <li>{{ dvd.name }} par {{ dvd.realisateur }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

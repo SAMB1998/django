@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des CDs</title>
+</head>
+<body>
+    <h1>Liste des CDs</h1>
+    <ul>
+        {% for cd in cds %}
+            <li>{{ cd.name }} par {{ cd.artiste }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- gestion_app/templates/gestion_app/emprunt_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emprunt List</title>
+</head>
+<body>
+    <h1>Emprunt List</h1>
+    <ul>
+        {% for emprunt in emprunts %}
+            <li>{{ emprunt.media.titre }} emprunté par {{ emprunt.membre.prenom }} {{ emprunt.membre.nom }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

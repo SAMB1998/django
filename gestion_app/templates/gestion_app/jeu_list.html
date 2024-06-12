@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Jeux de Plateau</title>
+</head>
+<body>
+    <h1>Liste des Jeux de Plateau</h1>
+    <ul>
+        {% for jeu in jeux %}
+            <li>{{ jeu.name }} par {{ jeu.createur }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

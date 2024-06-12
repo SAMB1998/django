@@ -1,0 +1,15 @@
+<!-- gestion_app/templates/gestion_app/media_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media List</title>
+</head>
+<body>
+    <h1>Media List</h1>
+    <ul>
+        {% for media in medias %}
+            <li>{{ media.titre }} - {{ media.type_media }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
